@@ -55,8 +55,8 @@ class Chatbox {
         // })
         fetch('/predict', {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ messages: text1 })
+            body: JSON.stringify({ messages: text1 }),
+            headers: { 'Content-Type': 'application/json' }
         })
         .then(response => response.json())
         .then(data => {
