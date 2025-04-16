@@ -1,0 +1,106 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hello",
+        "Hi",
+        "Hey",
+        "Good morning",
+        "Good evening"
+      ],
+      "responses": [
+        "Hello! How can I assist you today?",
+        "Hi there! How can I help you with your courses?",
+        "Hello! Do you need help with a specific course or topic?"
+      ]
+    },
+    {
+      "tag": "course_inquiry",
+      "patterns": [
+        "Can you tell me about the courses available?",
+        "Courses available?",
+        "What courses do you offer?",
+        "I'm looking for a specific course"
+      ],
+      "responses": [
+        "We offer courses in various subjects like : Maths , Science ,Engineering Courses ( DSA , Web Development , Data Science) . Could you specify a particular area of interest?",
+        "Our platform provides courses in different fields. Let me know your area of interest to provide more details!"
+      ]
+    },
+    {
+      "tag": "course_enrollment",
+      "patterns": [
+        "How do I enroll in a course?",
+        "Can you help me with the enrollment process?",
+        "I want to sign up for a course"
+      ],
+      "responses": [
+        "To enroll in a course, simply go to our Courses page, select your preferred course, and click on 'Enroll Now'. You can follow the instructions from there.",
+        "You can sign up for a course by visiting the course page and clicking 'Enroll'. Let me know if you encounter any issues!"
+      ]
+    },
+    {
+      "tag": "course_fee",
+      "patterns": [
+        "What is the fee for the courses?",
+        "Are there any free courses?",
+        "How much does a course cost?"
+      ],
+      "responses": [
+        "The fee varies depending on the course. Some introductory courses are free, while others have a one-time or subscription-based fee. You can check individual course pages for exact pricing.",
+        "We offer both free and paid courses. Please visit the course catalog to see specific prices."
+      ]
+    },
+    {
+      "tag": "schedule",
+      "patterns": [
+        "When are the classes scheduled?",
+        "Can I access the course materials anytime?",
+        "What is the course schedule?"
+      ],
+      "responses": [
+        "Our courses are flexible and allow you to access materials anytime. For live sessions, you can check the schedule on your course dashboard.",
+        "Classes are mostly self-paced, but live sessions are scheduled based on the course. Check your dashboard for more details."
+      ]
+    },
+    {
+      "tag": "technical_support",
+      "patterns": [
+        "I'm having trouble accessing my course",
+        "The platform isn't loading",
+        "I need help with technical issues"
+      ],
+      "responses": [
+        "I'm here to help! Please describe the issue you're facing, or you can contact our support team at support@example.com.",
+        "For technical issues, try refreshing the page or clearing your cache. If the problem persists, our support team is ready to assist!"
+      ]
+    },
+    {
+      "tag": "certificate",
+      "patterns": [
+        "Do I get a certificate after completing a course?",
+        "Is there a certificate for this course?",
+        "Will I receive certification?"
+      ],
+      "responses": [
+        "Yes, you will receive a certificate upon successful completion of the course. You can download it from your profile.",
+        "Certificates are awarded upon completion of most courses. You’ll find it in your profile once you finish all course requirements."
+      ]
+    },
+    {
+      "tag": "farewell",
+      "patterns": [
+        "Thank you",
+        "Thanks for the help",
+        "Goodbye",
+        "See you later"
+      ],
+      "responses": [
+        "You're welcome! Feel free to reach out if you need any further assistance.",
+        "Goodbye! Happy learning, and feel free to ask if you have more questions!",
+        "Thank you for chatting with us. Have a great day!"
+      ]
+    }
+  ]
+}
