@@ -5,13 +5,10 @@ app = Flask(__name__)
 
 
 
-@app.route("/")
-def home():
-    return "Backend is live!"
     
 
-@app.get("/")
-def index_get():
+@app.route("/")
+def index():
     return render_template("index.html")
 
 @app.post("/predict")
