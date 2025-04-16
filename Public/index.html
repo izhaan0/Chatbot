@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" href="/static/style.css">
+<link rel="stylesheet" href="./static/style.css">
 
 <head>
     <meta charset="UTF-8">
@@ -28,13 +28,16 @@
             </div>
         </div>
         <div class="chatbox__button">
-            <button><img src="{{ url_for('static', filename='images/chatbox-icon.svg') }}" /></button>
+            <button><img src="./static/images/chatbox-icon.svg" /></button>
         </div>
     </div>
 </div>
 
 
-    <script type="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
+    <script type="text/javascript" src="./static/app.js"></script>
 
 </body>
 </html>
+
+<!-- "{{ url_for('static', filename='app.js') }}" -->
+<!-- {{ url_for('static', filename='images/chatbox-icon.svg') }} -->
