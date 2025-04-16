@@ -5,7 +5,10 @@ app = Flask(__name__)
 
 
 
-
+@app.route("/")
+def home():
+    return "Backend is live!"
+    
 
 @app.get("/")
 def index_get():
