@@ -47,11 +47,16 @@ class Chatbox {
         this.messages.push(msg1);
         textField.value = '';  // Clear input field immediately
 
-        fetch('http://127.0.0.1:5000/predict', {
+        // fetch('http://127.0.0.1:5000/predict', {
+        //     method: 'POST',
+        //     body: JSON.stringify({ messages: text1 }), // Corrected key name
+        //     mode: 'cors',
+        //     headers: { 'Content-Type': 'application/json' }
+        // })
+        fetch('/predict', {
             method: 'POST',
-            body: JSON.stringify({ messages: text1 }), // Corrected key name
-            mode: 'cors',
-            headers: { 'Content-Type': 'application/json' }
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ messages: text1 })
         })
         .then(response => response.json())
         .then(data => {
