@@ -53,7 +53,7 @@ class Chatbox {
         //     mode: 'cors',
         //     headers: { 'Content-Type': 'application/json' }
         // })
-        fetch('/predict', {
+        fetch('https://chatbot-9-dl6x.onrender.com/predict', {
             method: 'POST',
             body: JSON.stringify({ messages: text1 }),
             headers: { 'Content-Type': 'application/json' }
